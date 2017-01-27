@@ -10,10 +10,11 @@ function Pizza(size, toppings) {
 
 
 
-$(document).ready(function) {
+$(document).ready(function() {
   $("#sizeOrder").submit(function(event) {
    event.preventDefault();
-   var pizzaSize = $(".pizzaSize").val();
-   var orderToppings = $(".orderToppings").val();
+   var pizzaSize = $("input:radio[name=flavor]:checked").val();
+   var orderToppings = $("input[type=checkbox]:checked").val();
    console.log(orderToppings);
-}
+  })
+})
