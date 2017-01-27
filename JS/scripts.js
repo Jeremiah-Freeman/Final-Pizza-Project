@@ -8,35 +8,22 @@ var newOrderToppings = [];
 var pizzaSize = newOrderSize;
 var toppings = newOrderToppings;
 var orderedPizza = new Pizza(pizzaSize,toppings);
-var sum = [];
+var total = [];
 
 Pizza.prototype.calculate = function() {
-for (var i = 0; i < orderedPizza.length; i++){
+for( var i = 0; i < pizzaSize.length; i++) {
+  total.push(pizzaSize[i]+toppings[i]);
+  }
+}//
 
-  sum += (orderedPizza[i]);
-return sum
-
-  };
-};
-
-  console.log(orderedPizza);
+console.log(total);
 
 
 
-// orderedPizza.calculate();
-// var finalOrder =
-// console.log(orderedPizza);
-// console.log(newPizza);
-
-// console.log(newPizza);
-// // var allToppings = ['vcheese','vpeperoni','vchicken','veggies','vmeatlovers']
-//
-// Pizza.prototype.shovetoppings = function() {
-//   newPizza.push(newToppings)
-// };
 
 
 
+//front-end logic
 $(document).ready(function() {
   $("#sizeOrder").submit(function(event) {
    event.preventDefault();
