@@ -13,25 +13,68 @@
       <div class="jumbotron">
         <h2>Do No Evil Pizza</h2>
       </div>
-      <form class="orderForm" action="index.html" method="post">
-        <div class="radio">
+
+
+
+
+      <form id="sizeOrder" action="index.html" method="post">
+        <div class="sizeOrder">
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Small">
+              Small
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Medium">
+              Medium
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Large">
+              Large
+            </label>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="orderToppings">
           <label>
-            <input type="radio" name="size" value="Small" checked>
-            Small
+            <input type="checkbox" name="topping" value="vcheese">
+            Vegan Cheese
           </label>
         </div>
-        <div class="radio">
+        <div class="checkboxes">
           <label>
-            <input type="radio" name="size" value="medium">
-            Medium
+            <input type="checkbox" name="topping" value="vpeperoni">
+            Vegan Peperoni
           </label>
         </div>
-        <div class="radio">
+        <div class="checkboxes">
           <label>
-            <input type="radio" name="size" value="Large">
-            Large
+            <input type="checkbox" name="topping" value="vchicken">
+            Vegan Chicken
           </label>
         </div>
+        <div class="checkboxes">
+          <label>
+            <input type="checkbox" name="topping" value="veggies">
+            Veggies
+          </label>
+        </div>
+        <div class="checkboxes">
+          <label>
+            <input type="checkbox" name="topping" value="vmeatlovers">
+            Vegan Meatlovers
+          </label>
+        </div>
+        <button type="submit" name="button">Submit the Goodness</button>
+        <p id="output">Price</p>
       </form>
 
       </div>
