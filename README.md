@@ -20,7 +20,7 @@
 ## Setup/Installation Requirements
 
 * Open web browser
-* Clone this, "https://github.com/jaythinkshappiness/Ping-Pong/tree/gh-pages" repository, then open 'index.html' in the browser.
+* Clone this, "https://github.com/jaythinkshappiness/Pizza-Order/tree/gh-pages" repository, then open 'index.html' in the browser.
 * Inside you will find:
   * css folder
   * README.md file
