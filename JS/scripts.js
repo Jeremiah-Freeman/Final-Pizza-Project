@@ -8,19 +8,21 @@ var newOrderToppings = [];
 var pizzaSize = newOrderSize;
 var toppings = newOrderToppings;
 var orderedPizza = new Pizza(pizzaSize,toppings);
-var total = [];
+
+var total = newOrderToppings.split('').map(function(item) {
+  return parseInt(item, 10);
 
 Pizza.prototype.calculate = function() {
-for( var i = 0; i < pizzaSize.length; i++) {
-  total.push(pizzaSize[i]+toppings[i]);
+for ( var i = 0; i < orderedPizza; i++) {
+    if (pizzaSize === 7){
+      return pizzaSize + 7;
+    } else if (pizzaSize === 9){
+      return pizzaSize + 9;
+    } else if (pizzaSize === 11){
+      return pizzaSize + 11;
+    }
   }
 }//
-
-console.log(total);
-
-
-
-
 
 
 //front-end logic
@@ -30,7 +32,7 @@ $(document).ready(function() {
    var pizzaSize = $("input:radio[name=size]:checked").each(function(){
     newOrderSize.push($(this).val());
    var orderToppings = $("input:checkbox[name=topping]:checked").each(function(){
-     newOrderToppings.push(parseInt($(this).val()));
+     newOrderToppings.push($(this).val());
      var price = orderedPizza.calculate();
      console.log(price);
     // console.log(finalOrder);
