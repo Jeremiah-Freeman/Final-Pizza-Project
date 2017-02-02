@@ -18,9 +18,9 @@ var orderedPizza = new Pizza(newOrderSize,newOrderToppings);  //ordered pizza
 
 
 //
-// pizza.prototype.calculate = function() {
-//     for ( var i = 0; i <= orderedPizza; i++ )
-//     orderedPizza[i] + orderedPizza[i];
+pizza.prototype.calculate = function() {
+    for ( var i = 0; i <= orderedPizza; i++ )
+    orderedPizza[i] + orderedPizza[i];
 //
 // };
 
@@ -36,10 +36,10 @@ $(document).ready(function() {
      event.preventDefault();
 
 
-     var pizzaSize = $("input:radio[name=size]:checked").each(function() {
-      newOrderSize.push($(this).val());
-     var orderToppings = $("input:checkbox[name=topping]:checked").each(function() {
-       newOrderToppings.push($(this).val());
+    var pizzaSize = $("input:radio[name=size]:checked").each(function() {
+        newOrderSize.push($(this).val());
+    var orderToppings = $("input:checkbox[name=topping]:checked").each(function() {
+        newOrderToppings.push($(this).val());
       //  alert(orderToppings);
       //  var price = orderedPizza.calculate();
       //  console.log(price);
