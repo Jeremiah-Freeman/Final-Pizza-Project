@@ -4,17 +4,18 @@
 
 #### By Jeremiah Freeman
 
-## Description
+## Description/Specs
+    User can order a pizza through the website and have the price displayed.
 
-1. User visits site and selects what size pizza they want
+1. User visits site and selects what size pizza they want.
     input: large
-    output: large
+    output: radio button large is checked
 
-2. User then selects what kind of toppings they want.
+2. User selects what kind of toppings they want.
     input: vegan cheese, vegan meatlovers
-    output: vegan cheese, vegan meatlovers
+    output: vegan cheese, vegan meatlovers is checked
 
-3. user then clicks submit button and price is displayed
+3. user then clicks submit button and price is displayed.
 
 
 ## Setup/Installation Requirements
@@ -30,7 +31,7 @@
 
 ## Known Bugs
 
-Everything works accept the total is not displayed
+Everything works accept the total is not calculated and displayed.
 
 ## Support and contact details
 
