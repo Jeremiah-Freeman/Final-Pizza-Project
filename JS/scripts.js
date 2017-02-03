@@ -1,32 +1,33 @@
 
-var newOrderSize = [];
-var newOrderToppings = [];
-newOrderToppings.toString();
-newOrderSize.toString();
-console.log(newOrderToppings);
+//Business Logic
+
+var orderSize = [];
+var theOrderToppings = [];
 
 
-var thePizzaSize = newOrderSize;
-var someToppings = parseInt(newOrderToppings,10);
+function add(a , b){
+  return a+b;
+}
+
 
 function Pizza(size, toppings) {
          this.pizzaSize = size;
          this.toppings = toppings;
-       };
-
-var orderedPizza = new Pizza(newOrderSize,newOrderToppings);  //ordered pizza
+};
 
 
-//
-pizza.prototype.calculate = function() {
-    for ( var i = 0; i <= orderedPizza; i++ )
-    orderedPizza[i] + orderedPizza[i];
-//
-// };
+Pizza.prototype.calculate = function () {
+  var joinToppings = orderSize.concat(theOrderToppings);
+  var price = joinToppings.reduce(add , 0);
+  return price;
+};
+
+
+var newPizza = new Pizza(orderSize,theOrderToppings);
 
 
 
-
+// //////////////////////////////////////////////////////////////////////////
 
 
 
@@ -34,20 +35,13 @@ pizza.prototype.calculate = function() {
 $(document).ready(function() {
   $("#sizeOrder").submit(function(event) {
      event.preventDefault();
-
-
     var pizzaSize = $("input:radio[name=size]:checked").each(function() {
-        newOrderSize.push($(this).val());
-    var orderToppings = $("input:checkbox[name=topping]:checked").each(function() {
-        newOrderToppings.push($(this).val());
-      //  alert(orderToppings);
-      //  var price = orderedPizza.calculate();
-      //  console.log(price);
-
+      orderSize.push(parseInt($(this).val()));
+      var orderToppings = $("input:checkbox[name=topping]:checked").each(function() {
+        theOrderToppings.push(parseInt($(this).val()));
+        var price = newPizza.calculate();
+        $("#output").text(price);
       });
     });
   });
 });
-
-
-//
