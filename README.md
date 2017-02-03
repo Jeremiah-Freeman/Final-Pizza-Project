@@ -7,7 +7,18 @@
 ## Description/Specs
     User can order a pizza through the website and have the price displayed.
 
+<<<<<<< HEAD
 1. User visits site and selects what size pizza they want.
+=======
+
+| Behavior | Input |Output |
+|----------|-------|-------|
+|user selects radio/checkbox| checkbox checked | value collected in front-end logic|
+
+
+
+1. User visits site and selects what size pizza they want
+>>>>>>> master
     input: large
     output: radio button large is checked
 

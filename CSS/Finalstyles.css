@@ -1,0 +1,36 @@
+body {
+  background-image: url(http://www.villamantua.com/wp-content/uploads/2013/05/pizza-oven.jpg);
+  background-size: cover;
+  /*background-size: contain;*/
+}
+
+label {
+  color: white;
+
+}
+form {
+  margin-top: 45%
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  text-underline-position: auto;
+}
+
+button {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.jumbotron {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  margin-top: 20px;
+  color: white;
+}
