@@ -7,13 +7,12 @@
 ## Description/Specs
     User can order a pizza through the website and have the price displayed.
 
-<<<<<<< HEAD
-1. User visits site and selects what size pizza they want.
-=======
+
 
 | Behavior | Input |Output |
 |----------|-------|-------|
 |user selects radio/checkbox| checkbox checked | value collected in front-end logic|
+|user presses button to get price|click 'Submit the Goodness'|price of toppings and size is displayed|
 
 
 
@@ -32,7 +31,7 @@
 ## Setup/Installation Requirements
 
 * Open web browser
-* Clone this, "https://github.com/jaythinkshappiness/Pizza-Order/tree/gh-pages" repository, then open 'index.html' in the browser.
+* Clone this, "https://github.com/jaythinkshappiness/Final-Pizza-Project/tree/gh-pages" repository, then open 'index.html' in the browser.
 * Inside you will find:
   * css folder
   * README.md file
@@ -42,7 +41,7 @@
 
 ## Known Bugs
 
-Everything works accept the total is not calculated and displayed.
+There are no known bugs.
 
 ## Support and contact details
 
