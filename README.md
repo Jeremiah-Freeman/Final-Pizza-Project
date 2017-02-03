@@ -15,19 +15,6 @@
 |user presses button to get price|click 'Submit the Goodness'|price of toppings and size is displayed|
 
 
-
-1. User visits site and selects what size pizza they want
->>>>>>> master
-    input: large
-    output: radio button large is checked
-
-2. User selects what kind of toppings they want.
-    input: vegan cheese, vegan meatlovers
-    output: vegan cheese, vegan meatlovers is checked
-
-3. user then clicks submit button and price is displayed.
-
-
 ## Setup/Installation Requirements
 
 * Open web browser
